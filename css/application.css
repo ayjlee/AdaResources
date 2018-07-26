@@ -1,0 +1,51 @@
+body, table, .accordion {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+#navMenu ul li {
+  display: inline-block;
+  margin-left: 10px;
+  list-style: none;
+}
+
+section, article {
+  margin: 3em 0;
+}
+
+th {
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 14px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:after {
+  content: '+';
+  float: right;
+}
+
+.active, .accordion:hover {
+    border-bottom: 1px solid pink;
+}
+
+.expand {
+    padding: 14px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
